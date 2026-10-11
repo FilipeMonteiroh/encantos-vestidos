@@ -1,0 +1,258 @@
+
+/* 1. CONFIGURAÇÃO GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5fa;
+    color: #444444;
+    line-height: 1.6;
+}
+
+/* 2. CABEÇALHO */
+header {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-bottom: 3px solid #f4b6d2;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    color: #d63384;
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+header p {
+    margin: 0 0 20px;
+    color: #666666;
+}
+
+/* 3. MENU */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #a61e62;
+}
+
+/* 4. CONTEÚDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* 5. SEÇÕES */
+section {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #f3d3e2;
+    border-radius: 14px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #c02670;
+    text-align: center;
+}
+
+/* 6. INÍCIO */
+#inicio {
+    padding: 50px 25px;
+    text-align: center;
+    background-color: #fde3ef;
+    border: none;
+}
+
+#inicio h2 {
+    font-size: 30px;
+}
+
+#inicio a,
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#inicio a:hover,
+article a:hover {
+    background-color: #a61e62;
+}
+
+/* 7. CATEGORIAS */
+#categorias ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+#categorias li a {
+    display: block;
+    padding: 12px 16px;
+    background-color: #fff0f6;
+    border: 1px solid #f0b6d1;
+    border-radius: 10px;
+    color: #a61e62;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#categorias li a:hover {
+    background-color: #fbd5e6;
+}
+
+/* 8. ORGANIZAÇÃO DOS PRODUTOS */
+#vestidos,
+#promocoes,
+#vestidos-festa {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+#vestidos h2,
+#promocoes h2,
+#vestidos-festa h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+article {
+    min-width: 0;
+    padding: 18px;
+    background-color: #ffffff;
+    border: 1px solid #ead5df;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(80, 30, 55, 0.08);
+}
+
+article img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #a61e62;
+    margin-bottom: 8px;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+article strong {
+    color: #c02670;
+    font-size: 18px;
+}
+
+/* 9. COLEÇÃO CELEBRAR */
+#vestidos-festa article {
+    grid-column: 1 / -1;
+}
+
+#vestidos-festa article img:first-of-type {
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#vestidos-festa article img:nth-of-type(2) {
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 10. LISTAS DE BENEFÍCIOS */
+#beneficios ul {
+    padding-left: 25px;
+}
+
+#beneficios li {
+    margin-bottom: 10px;
+}
+
+/* 11. FORMULÁRIO */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d9b7c8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #d63384;
+    border-color: transparent;
+}
+
+form button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d63384;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: justify;
+}
+
+/* 12. RODAPÉ */
+footer {
+    padding: 30px 20px;
+    background-color: #702747;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
